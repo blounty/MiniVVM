@@ -32,7 +32,7 @@ public App()
   }
 </code></pre>
 
-## Setup your VieWModels
+## Setup your ViewModels
 
 <pre><code>
     public class ViewOneViewModel
