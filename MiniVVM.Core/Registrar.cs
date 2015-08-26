@@ -26,7 +26,7 @@ namespace MiniVVM
                     continue;
                 foreach (ExportViewAttribute attribute in attributes)
                 {
-                    exportedViews.Add(new ExportedView(attribute.ViewType, attribute.ViewModelType, attribute.TargetIdom));
+                    exportedViews.Add(new ExportedView(attribute.ViewType, attribute.ViewModelType, attribute.TargetIdiom));
                 }
             }
         }

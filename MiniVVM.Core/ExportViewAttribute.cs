@@ -19,17 +19,22 @@ namespace MiniVVM
             private set;
         }
 
-        public TargetIdiom TargetIdom
+        public TargetIdiom TargetIdiom
         {
             get;
             private set;
         }
 
-        public ExportViewAttribute(Type viewType, Type viewModelType, TargetIdiom targetIdom)
+        public ExportViewAttribute(Type viewType, Type viewModelType, TargetIdiom targetIdiom)
         {
-            this.TargetIdom = targetIdom;
-            this.ViewModelType = viewModelType;
-            this.ViewType = viewType;
+            TargetIdiom = targetIdiom;
+            ViewModelType = viewModelType;
+            ViewType = viewType;
+        }
+
+        public ExportViewAttribute(Type viewType, Type viewModelType)
+            : this(viewType, viewModelType, TargetIdiom.Phone)
+        {
         }
     }
 }
