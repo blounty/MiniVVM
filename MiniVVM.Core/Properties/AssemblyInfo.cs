@@ -29,5 +29,6 @@ using MiniVVM;
 
 [assembly: InternalsVisibleTo("MiniVVM-iOS")]
 [assembly: InternalsVisibleTo("MiniVVM-Droid")]
+[assembly: InternalsVisibleTo("MiniVVM-Win81")]
 
 

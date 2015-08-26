@@ -31,7 +31,7 @@ namespace MiniVVM
 
         public ContentPage ResolveView<TViewModel>(Dictionary<string, object> data = null) where TViewModel : ViewModel
         {
-            var views = Registrar.GetViewsByViewModel<TViewModel>();
+            var views = ViewRegister.GetViewsByViewModel<TViewModel>();
 
             ExportedView exportedView = views.Any(v => v.TargetIdom == Device.Idiom) 
                 ? views.Single(v => v.TargetIdom == Device.Idiom) 

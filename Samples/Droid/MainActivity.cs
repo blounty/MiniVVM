@@ -18,7 +18,7 @@ namespace MiniSample.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            global::MiniVVM.Engine.Ignite();
+            global::MiniVVM.Engine.Minify();
             LoadApplication(new App());
         }
     }

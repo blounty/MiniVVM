@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace MiniVVM
 {
-    static class Registrar
+    static class ViewRegister
     {
         private static List<ExportedView> exportedViews = new List<ExportedView>();
 
@@ -17,7 +17,7 @@ namespace MiniVVM
             }
         }
 
-        internal static void RegisterAll (Assembly[] assemblies)
+        internal static void RegisterAssemblies (Assembly[] assemblies)
         {
             foreach (var assembly in assemblies)
             {

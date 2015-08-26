@@ -2,7 +2,7 @@
 <package>
 	<metadata>
 		<id>MiniVVM</id>
-		<version>0.0.2</version>
+		<version>0.0.3</version>
 		<authors>Alex Blount</authors>
 		<owners>Alex Blount</owners>
 		<licenseUrl>https://github.com/blounty/MiniVVM/blob/master/LICENSE</licenseUrl>

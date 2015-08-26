@@ -14,7 +14,7 @@
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <AssemblyName>MiniVVM-Droid</AssemblyName>
     <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
-    <ReleaseVersion>0.2</ReleaseVersion>
+    <ReleaseVersion>0.0.3</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,12 +55,6 @@
     </Reference>
     <Reference Include="Xamarin.Forms.Platform">
       <HintPath>..\packages\Xamarin.Forms.1.4.4.6392\lib\MonoAndroid10\Xamarin.Forms.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="MiniVVM-Droid">
-      <HintPath>..\packages\MiniVVM.0.0.1\lib\MonoAndroid10\MiniVVM-Droid.dll</HintPath>
-    </Reference>
-    <Reference Include="MiniVVM">
-      <HintPath>..\packages\MiniVVM.0.0.1\lib\MonoAndroid10\MiniVVM.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v4">
       <HintPath>..\packages\Xamarin.Android.Support.v4.22.2.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>

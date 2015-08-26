@@ -4,9 +4,9 @@ namespace MiniVVM
 {
     public static class Engine
     {
-        public static void Ignite()
+        public static void Minify()
         {
-            Registrar.RegisterAll(AppDomain.CurrentDomain.GetAssemblies ());
+            ViewRegister.RegisterAssemblies(AppDomain.CurrentDomain.GetAssemblies ());
         }
     }
 

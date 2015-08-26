@@ -8,6 +8,7 @@ using MiniVVM;
 [assembly:MiniVVM.ExportView(typeof(ViewOne), typeof(ViewOneViewModel))]
 [assembly:MiniVVM.ExportView(typeof(ViewTwo), typeof(ViewTwoViewModel))]
 
+
 namespace MiniSample
 {
     public class App : Application
