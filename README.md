@@ -17,7 +17,7 @@ protected override void OnCreate(Bundle bundle)
     base.OnCreate(bundle);
 
     global::Xamarin.Forms.Forms.Init(this, bundle);
-    global::MiniVVM.Engine.Ignite();
+    global::MiniVVM.Engine.Minify();
     LoadApplication(new App());
 }
 </code></pre>
