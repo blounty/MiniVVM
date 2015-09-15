@@ -41,20 +41,7 @@ namespace MiniVVM
             ContentPage view = Activator.CreateInstance(exportedView.ViewType) as ContentPage;
             ViewModel viewModel = Activator.CreateInstance(exportedView.ViewModelType) as ViewModel;             
 
-            EventHandler appearingAction = (sender, e) => 
-                {
-                    view.BindingContext = viewModel;
-                };
-
-            EventHandler disappearingAction = (sender, e) => 
-                {
-                    view.BindingContext = null;
-                };
-            
-            view.Appearing += appearingAction;
-            view.Disappearing += disappearingAction;
-
-
+            view.BindingContext = viewModel;
             viewModel.Navigation = view.Navigation;
             view.BindingContext = viewModel;
 

@@ -8,6 +8,11 @@ namespace MiniSample.Views
     {
         public ViewTwo()
         {
+            var button = new Button{
+                Text="Take Picture"
+            };
+
+            button.SetBinding(Button.CommandProperty, new Binding("GetImageCommand"));
             var nameLabel = new Label();
             nameLabel.SetBinding(Label.TextProperty, new Binding("UsersName"));
             Content = new StackLayout
@@ -15,9 +20,15 @@ namespace MiniSample.Views
                 Children =
                 {
                     new Label { Text = "Hello" },
-                    nameLabel
+                    nameLabel,
+                    button
                 }
             };
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
         }
     }
 }

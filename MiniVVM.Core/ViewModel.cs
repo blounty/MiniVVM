@@ -23,31 +23,6 @@ namespace MiniVVM
             
         }
 
-        protected async Task Push<T>(Dictionary<string, object> data = null)
-            where T : ViewModel
-        {
-
-            try
-            {
-                var view = ViewFactory.Current.ResolveView<T>();
-
-                if(data != null){
-                    ((ViewModel)view.BindingContext).Init(data);
-                }
-                await Navigation.PushAsync(view);
-            }
-            catch (Exception)
-            {
-
-            }
-           
-        }
-
-        protected async Task Pop()
-        {
-            await Navigation.PopAsync();
-        }
-
         List<KeyValuePair<string, List<Action>>> PropertyWatchers = new List<KeyValuePair<string, List<Action>>>();
 
         #region INotifyPropertyChanged implementation

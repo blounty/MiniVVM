@@ -2,14 +2,15 @@
 <package>
 	<metadata>
 		<id>MiniVVM</id>
-		<version>0.0.3</version>
+		<title>MiniVVM</title>
+		<version>0.0.6</version>
 		<authors>Alex Blount</authors>
 		<owners>Alex Blount</owners>
 		<licenseUrl>https://github.com/blounty/MiniVVM/blob/master/LICENSE</licenseUrl>
 		<projectUrl>https://github.com/blounty/MiniVVM</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>An extremely small and tiny (almost not there) MVVM library for Xamarin.Forms.</description>
-		<releaseNotes>Auto poulation of child viewmodels added.</releaseNotes>
+		<releaseNotes>Bug Fixes</releaseNotes>
 		<copyright>Copyright 2015</copyright>
 		<tags>Xamarin Forms Xamarin.Forms Mvvm Model View ViewModel</tags>
 		<dependencies>

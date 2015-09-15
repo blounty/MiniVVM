@@ -120,7 +120,7 @@ Global
 		{7E333CF7-A79B-409A-9FE2-C6BAF273D935} = {9AD29CBA-C94C-46A5-AB9F-A844FF8B6C55}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		version = 0.0.3
+		version = 0.0.6
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

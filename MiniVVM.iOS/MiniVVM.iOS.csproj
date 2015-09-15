@@ -9,7 +9,7 @@
     <RootNamespace>MiniVVM</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>MiniVVM-iOS</AssemblyName>
-    <ReleaseVersion>0.0.3</ReleaseVersion>
+    <ReleaseVersion>0.0.6</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
