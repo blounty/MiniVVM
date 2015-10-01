@@ -12,8 +12,6 @@ namespace MiniVVM
         static Lazy<ViewFactory> current =
             new Lazy<ViewFactory>(() => new ViewFactory(), true);
 
-        Dictionary<Type, Type> viewMappings = new Dictionary<Type, Type>();
-
         public static ViewFactory Current
         {
             get
@@ -22,11 +20,18 @@ namespace MiniVVM
             }
         }
 
-        internal void RegisterView<TViewModel, TView>() 
+        public void RegisterView<TViewModel, TView>(TargetIdiom idiom = TargetIdiom.Phone) 
             where TViewModel : ViewModel 
             where TView : VisualElement
         {
-            viewMappings.Add(typeof(TViewModel), typeof(TView));
+            try
+            {
+                ViewRegister.ExportedViews.Add(new ExportedView(typeof(TView), typeof(TViewModel), idiom));
+            }
+            catch (Exception ex)
+            {
+                
+            }
         }
 
         public ContentPage ResolveView<TViewModel>(Dictionary<string, object> data = null) where TViewModel : ViewModel

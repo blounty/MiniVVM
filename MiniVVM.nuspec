@@ -3,31 +3,22 @@
 	<metadata>
 		<id>MiniVVM</id>
 		<title>MiniVVM</title>
-		<version>0.0.6</version>
+		<version>0.0.7</version>
 		<authors>Alex Blount</authors>
 		<owners>Alex Blount</owners>
 		<licenseUrl>https://github.com/blounty/MiniVVM/blob/master/LICENSE</licenseUrl>
 		<projectUrl>https://github.com/blounty/MiniVVM</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>An extremely small and tiny (almost not there) MVVM library for Xamarin.Forms.</description>
-		<releaseNotes>Bug Fixes</releaseNotes>
+		<releaseNotes>Rehaul to only require Pcl. Breaking changes!!!</releaseNotes>
 		<copyright>Copyright 2015</copyright>
 		<tags>Xamarin Forms Xamarin.Forms Mvvm Model View ViewModel</tags>
 		<dependencies>
-			<dependency id="Xamarin.Forms" version="1.4.4.6392"/>
+			<dependency id="Xamarin.Forms" version="1.5.0.6447"/>
 		</dependencies>
 	</metadata>
 	<files>
 		 <!--Core-->
-		<file src="MiniVVM.Core/bin/Release/MiniVVM.dll" target="lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/MiniVVM.dll"/>
-		
-		<!--Xamarin.Android-->
-		<file src="MiniVVM.Droid/bin/Release/MiniVVM-Droid.dll" target="lib/MonoAndroid10/MiniVVM-Droid.dll" />
-		<file src="MiniVVM.Core/bin/Release/MiniVVM.dll" target="lib/MonoAndroid10/MiniVVM.dll" />
-		
-        <!--Xamarin.iOSUnified-->
-        <file src="MiniVVM.iOS/bin/Release/MiniVVM-iOS.dll" target="lib/Xamarin.iOS10/MiniVVM-iOS.dll" />
-        <file src="MiniVVM.Core/bin/Release/MiniVVM.dll" target="lib/Xamarin.iOS10/MiniVVM.dll" />
-				
+		<file src="MiniVVM.Core/bin/Release/MiniVVM.dll" target="lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/MiniVVM.dll"/>				
 	</files>
 </package>

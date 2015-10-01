@@ -5,17 +5,16 @@ using MiniSample.Views;
 using MiniSample.ViewModels;
 using MiniVVM;
 
-[assembly:MiniVVM.ExportView(typeof(ViewOne), typeof(ViewOneViewModel))]
-[assembly:MiniVVM.ExportView(typeof(ViewTwo), typeof(ViewTwoViewModel))]
-
-
 namespace MiniSample
 {
     public class App : Application
     {
         public App()
         {
-            // The root page of your application
+
+            ViewFactory.Current.RegisterView<ViewOneViewModel, ViewOne>();
+            ViewFactory.Current.RegisterView<ViewTwoViewModel, ViewTwo>();
+
             MainPage = new NavigationPage(ViewFactory.Current.ResolveView<ViewOneViewModel>());
         }
 
