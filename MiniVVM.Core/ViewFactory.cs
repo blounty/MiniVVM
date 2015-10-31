@@ -70,7 +70,7 @@ namespace MiniVVM
                     continue;
 
                 var val = data[key];
-                if (property.PropertyType == val.GetType())
+                if (property.PropertyType.GetTypeInfo().IsAssignableFrom(val.GetType().GetTypeInfo()))
                 {
                     property.SetValue(viewModel, val);
                 }
