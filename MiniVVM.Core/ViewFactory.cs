@@ -69,13 +69,25 @@ namespace MiniVVM
                 if (property == null)
                     continue;
 
+                var typeInfo = property.PropertyType.GetTypeInfo();
+
                 var val = data[key];
-                if (property.PropertyType.GetTypeInfo().IsAssignableFrom(val.GetType().GetTypeInfo()))
+                if (val == null)
+                {
+                    if (typeInfo.IsClass)
+                    {
+                        property.SetValue(viewModel, null);
+                    }
+                    else if (typeInfo.IsGenericType && typeof (Nullable<>).GetTypeInfo().IsAssignableFrom(typeInfo))
+                    {
+                        property.SetValue(viewModel, null);
+                    }
+                }
+                else if (typeInfo.IsAssignableFrom(val.GetType().GetTypeInfo())) 
                 {
                     property.SetValue(viewModel, val);
                 }
             }
-
         }
     }
 }
